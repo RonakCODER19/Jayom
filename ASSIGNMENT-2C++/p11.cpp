@@ -6,16 +6,16 @@ class data
 {
     public:
 
-    int count;
+    int count1;
         void count(char name[])
         {
             int i=0;
-            count=0;
+            count1=0;
             while(name[i])
             {
                 if(name[i]>=97 && name[i]<=122 || name[i]>=65 && name[i]<=90)
                 {
-                    count++;
+                    count1++;
                 } 
             i++;
             }
@@ -24,7 +24,7 @@ class data
 
         void count()
         {
-            cout<<"in this string having "<<count<<" alphobat";
+            cout<<"in this string having "<<count1<<" alphobat";
         }
 };
 main()
@@ -34,7 +34,7 @@ main()
         cout<<"Enter any name :";
         gets(name);
         
-        p.s_count(name);
-        p.s_count();
+        p.count(name);
+        p.count();
     
 }
